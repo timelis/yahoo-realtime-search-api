@@ -26,6 +26,6 @@ bun run dev
 bun run typecheck
 ```
 
-Cloudflareの個人アカウント`cdvxxxc9@gmail.com`に同名のWorkerとして配置しています。GitHubの`timelis/yahoo-realtime-search-api`の`main`へのpushで、Workers Buildsが型チェック後に自動デプロイします。
+Cloudflareの個人アカウント`cdvxxxc9@gmail.com`に同名のWorkerとして配置しています。GitHubの`timelis/yahoo-realtime-search-api`の`main`へのpushで、Workers Buildsが型チェック後に自動デプロイします。ビルド環境変数`BUN_VERSION=1.4.2`を設定済みです。ローカルもBun 1.4.2を使用してください。
 
 手動デプロイは、同アカウントへアクセス可能なWrangler認証で`bun run deploy`を実行します。
