@@ -5,6 +5,8 @@
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
     "typecheck": "bun run cf-typegen && tsc",
+    "check": "ultracite check",
+    "fix": "ultracite fix",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
@@ -14,7 +16,11 @@
     "zod": "^4.6.2"
   },
   "devDependencies": {
+    "oxfmt": "0.67.0",
+    "oxlint": "1.82.0",
+    "oxlint-tsgolint": "7.0.2001",
     "typescript": "^7.0.2",
+    "ultracite": "7.11.1",
     "wrangler": "^4.110.0"
   }
 }

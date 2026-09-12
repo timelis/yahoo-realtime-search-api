@@ -24,7 +24,11 @@ curl https://yahoo-realtime-search-api.cdvxxxc9.workers.dev/pagination \
 bun install --frozen-lockfile
 bun run dev
 bun run typecheck
+bun run check
+bun run fix
 ```
+
+Ultracite（Oxlint + Oxfmt）の`core`と`anti-slop`、型情報を使ったlintを有効にしています。
 
 Cloudflareの個人アカウント`cdvxxxc9@gmail.com`に同名のWorkerとして配置しています。GitHubの`timelis/yahoo-realtime-search-api`の`main`へのpushで、Workers Buildsが型チェック後に自動デプロイします。ビルド環境変数`BUN_VERSION=1.4.2`を設定済みです。ローカルもBun 1.4.2を使用してください。
 
