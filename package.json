@@ -4,12 +4,17 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
+    "typecheck": "bun run cf-typegen && tsc",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
-    "hono": "^4.13.7"
+    "@hono/zod-validator": "^0.9.1",
+    "hono": "^4.13.7",
+    "ky": "2.0.2",
+    "zod": "^4.6.2"
   },
   "devDependencies": {
+    "typescript": "^7.0.2",
     "wrangler": "^4.110.0"
   }
 }
