@@ -2,7 +2,6 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "yahoo-realtime-search-api",
   "main": "src/index.ts",
-  "account_id": "2d86eb99354b01ed0f9016837de45a27",
   "compatibility_date": "2026-09-12",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
